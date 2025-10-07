@@ -13,3 +13,7 @@ $kafka-console-producer.sh --broker-list localhost:9092 --topic order_created :c
 Enter into consumer CLI
 $docker exec -it [containerName]-kafka-1 bash
 $kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic order_created --from-beginning
+
+#Project Setup
+1. $npx create-nx-workspace@latest projectName   :to create a NX NestJS environment
+2. nx g @nx/nest:application apps/..    :to create a microservice application
